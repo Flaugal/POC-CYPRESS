@@ -18,5 +18,6 @@ describe('add elements to cart', () => {
         cy.get('button.btn.btn-default.standard-checkout.button-medium').click();
         cy.get('a.bankwire').click();
         cy.get('button.btn.btn-default.button-medium').click();
+        cy.get('div.breadcrumb.clearfix').should('be.visible');
     });
 });

@@ -10,5 +10,6 @@ describe('add elements to cart', () => {
         cy.get('div.shopping_cart a[title="View my shopping cart"]').click();
         cy.get('a[title="Women"]').click();
         cy.get('a[data-id-product="1"] span').click();
+        cy.get('span.ajax_cart_product_txt.unvisible').should('be.visible');
 });
 });
